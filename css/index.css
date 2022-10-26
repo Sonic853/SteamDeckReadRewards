@@ -1,0 +1,51 @@
+p {
+  margin: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.overlay,
+.scare {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+.scare video#video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.scare video#video::-webkit-media-controls-enclosure {
+  display: none !important;
+}
+.overlay {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 800;
+  background-color: #212429;
+}
+.overlay .box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.overlay .box .green {
+  color: #4aa172;
+}
+.overlay .box #accept-button {
+  background: linear-gradient(to right, #3a9bed 0%, #2f7edf 50%, #235ecf 100%);
+  border: none;
+  color: #fff;
+  padding: 13px 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  width: 300px;
+  margin: 10px;
+}
