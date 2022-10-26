@@ -5,6 +5,7 @@ const acceptButton = document.querySelector('#accept-button');
 function buttonClick1(event) {
     event.preventDefault();
     overlay.hidden = true;
+    overlay.classList.add('d-none');
     video.play();
     videoClick();
 }
